@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMA Futuristic Answer Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>AMA Answer Bank</h1>
+                </div>
+                <div class="subtitle">Futuristic Machine Learning Knowledge Hub</div>
+            </div>
+            <div class="header-bg"></div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-item active" data-section="overview">
+                    <i class="fas fa-home"></i>
+                    <span>Overview</span>
+                </div>
+                <div class="nav-item" data-section="2mark">
+                    <i class="fas fa-star"></i>
+                    <span>2-Mark Questions</span>
+                </div>
+                <div class="nav-item" data-section="4mark">
+                    <i class="fas fa-gem"></i>
+                    <span>4-Mark Questions</span>
+                </div>
+                <div class="nav-item" data-section="concepts">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Key Concepts</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search questions, answers, or concepts...">
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Overview Section -->
+            <section id="overview" class="content-section active">
+                <div class="section-header">
+                    <h2><i class="fas fa-rocket"></i> Machine Learning Overview</h2>
+                    <div class="section-subtitle">Comprehensive AI & ML Knowledge Base</div>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Machine Learning is a subset of artificial intelligence (AI) that focuses on the development of computer algorithms that improve automatically through experience and by the use of data.</p>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>ML Life Cycle</h3>
+                        <p>7 essential steps: Gathering Data → Data Preparation → Data Wrangling → Analyzing Data → Training the Model → Testing the Model → Deployment</p>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Learning Types</h3>
+                        <p>Supervised Learning, Unsupervised Learning, Semi-supervised Learning, and Reinforcement Learning</p>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Types</h3>
+                        <p>Numerical Data (Discrete & Continuous), Categorical Data, and Ordinal Data</p>
+                    </div>
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">20</div>
+                        <div class="stat-label">Total Questions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">2-Mark Questions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">4-Mark Questions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Study Units</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2-Mark Questions Section -->
+            <section id="2mark" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-star"></i> 2-Mark Questions</h2>
+                    <div class="section-subtitle">Quick Concept Definitions & Explanations</div>
+                </div>
+                
+                <div class="questions-container" id="questions2mark">
+                    <!-- Questions will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- 4-Mark Questions Section -->
+            <section id="4mark" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-gem"></i> 4-Mark Questions</h2>
+                    <div class="section-subtitle">Detailed Explanations & Implementations</div>
+                </div>
+                
+                <div class="questions-container" id="questions4mark">
+                    <!-- Questions will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Key Concepts Section -->
+            <section id="concepts" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-lightbulb"></i> Key Concepts</h2>
+                    <div class="section-subtitle">Essential ML Topics & Definitions</div>
+                </div>
+                
+                <div class="concepts-grid" id="conceptsGrid">
+                    <!-- Concepts will be populated by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 AMA Answer Bank. Built with AI-powered insights.</p>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
